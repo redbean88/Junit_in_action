@@ -1,4 +1,4 @@
-package me.redbean;
+package me.redbean.parameterize;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

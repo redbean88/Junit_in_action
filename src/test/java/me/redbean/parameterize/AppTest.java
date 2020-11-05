@@ -1,4 +1,4 @@
-package me.redbean;
+package me.redbean.parameterize;
 
 import static org.junit.Assert.assertTrue;
 
