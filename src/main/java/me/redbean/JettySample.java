@@ -1,0 +1,20 @@
+package me.redbean;
+
+
+import org.mortbay.jetty.Server;
+import org.mortbay.jetty.handler.ResourceHandler;
+import org.mortbay.jetty.servlet.Context;
+import org.mortbay.jetty.servlet.ServletHolder;
+
+/**
+ * jetty 서버 설정
+ */
+public class JettySample {
+    public static void main(String[] args) throws Exception {
+        Server server = new Server(8080);
+
+        Context root = new Context(server,"/");
+        root.addServlet(new ServletHolder(new HelloServlet()),"/hello");
+        server.start();
+    }
+}
